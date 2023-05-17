@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Page</title>
+    <link rel="stylesheet" href="CSS/common.css" />
+    <script src="JS/chat.js" defer></script>
+  </head>
+  <body>
+    <!--!--------------------------------------------- Header ----------------------------------------------->
+    <header></header>
+    <!--!--------------------------------------------- Main Body ----------------------------------------------->
+    <main>
+      <section id="Home">
+        <h1 class="flexCenter">
+          Chat Page <a id="homepagelink" href="index.html">Home Page</a>
+        </h1>
+        <div id="Chat-Box">
+          <div class="SearchPeople">
+            <h2>Search People by email</h2>
+            <input
+              id="SearchPeople"
+              type="text"
+              placeholder="Enter Email or Username"
+            />
+            <div id="searchContainer"></div>
+          </div>
+          <div class="ChatContainer">
+            <div id="message-box"></div>
+            <form id="send_box">
+              <input
+                type="text"
+                id="message-input"
+                placeholder="Enter A Message"
+                required
+              />
+              <input type="submit" id="send-button" value="Send" />
+            </form>
+          </div>
+          <div class="AllContactShow">
+            <h2>All Contacts</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--!--------------------------------------------- Footer ----------------------------------------------->
+    <footer></footer>
+  </body>
+  <script src="http://localhost:4500/socket.io/socket.io.js"></script>
+</html>

@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flexCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  text-decoration: underline;
+}
+img,
+input,
+select,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+  padding: 3px;
+}
+input {
+  border: 1px solid grey !important;
+}
+#Home {
+  padding: 5px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*todo <!----------------------------------------------- < Chat app > -----------------------------------------------> */
+#IndexHome {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-position: center;
+  background-color: rgb(238, 236, 236);
+}
+h1 {
+  font-size: 40px;
+}
+#InsideIndex {
+  background-color: white;
+  padding: 40px 80px;
+  text-align: center;
+}
+div {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button,
+a,
+input[type="submit"] {
+  margin: 10px;
+  padding: 7px 18px !important;
+  width: 90px;
+  width: max-content;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: #ffd41f;
+}
+#message-box {
+  width: 100%;
+  border-radius: 2px !important;
+  height: 400px;
+  overflow-y: scroll;
+}
+#message-box::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(255, 255, 255) !important;
+}
+#message-box::-webkit-scrollbar-thumb {
+  background-color: #ffd41f;
+  border-radius: 10px;
+  width: 5px;
+}
+#message-box div {
+  text-align: left;
+  padding: 7px 17px;
+  font-size: 18px;
+  border-radius: 0;
+  box-shadow: none;
+}
+.NoneUser {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NoneUser > p {
+  text-align: center;
+  width: max-content;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgb(234, 243, 248);
+}
+.FirstUser {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(255, 254, 254);
+}
+.SecondUser {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: rgb(255, 254, 254);
+}
+.FirstUser > p {
+  text-align: left;
+  background-color: rgb(231, 231, 231);
+}
+.SecondUser > p {
+  text-align: right;
+  background-color: rgb(242, 237, 237);
+}
+.SecondUser > p,
+.FirstUser > p {
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-size: 17px;
+  width: max-content;
+}
+.CenteredMessage {
+  text-align: center !important;
+}
+.CenteredMessage > p {
+  background-color: rgb(249, 247, 247);
+}
+/* .SecondUser {
+} */
+.ChatContainer {
+  width: 50%;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#signupform,
+#loginform {
+  width: 35%;
+}
+input {
+  padding: 20px 5px !important;
+  height: 50px;
+  font-size: 20px;
+  margin: 2px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+input[type="submit"] {
+  padding: 0px !important;
+  margin: 4px 0px;
+  width: 200px !important;
+}
+#send_box {
+  margin: 4px;
+  border: 2px solid rgb(210, 205, 205);
+}
+#Chat-Box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#homepagelink {
+  padding: 5px 7px !important;
+}
+
+.SearchPeople,
+.AllContactShow {
+  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 80vh;
+  width: 25%;
+}
+#SearchPeople {
+  width: 90%;
+  font-size: 18px;
+}
+#searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: none;
+  padding: 2px;
+}
+.SeachChild {
+  width: 90%;
+  box-shadow: none;
+  border: 1px solid #f7d735;
+  text-align: left;
+  min-height: 70px;
+  margin: 2px 4px;
+  padding: 2px 12px;
+}
+.SeachChild > p {
+  color: grey;
+  font-size: 15px;
+}
+.SeachChild > h4 {
+  font-size: 18px;
+}
+.SeachChild > button {
+  margin: 1px;
+  padding: 2px 7px !important;
+  font-size: 13px;
+}
+.SeachChild > button:hover {
+  filter: invert();
+}
